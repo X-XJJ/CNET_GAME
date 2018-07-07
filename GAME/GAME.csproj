@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BDE85D4-1576-43F1-B3DF-9B044F6AE175}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GAME</RootNamespace>
+    <AssemblyName>GAME</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileForm.Designer.cs">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalDatas.cs" />
+    <Compile Include="JigsawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JigsawForm.Designer.cs">
+      <DependentUpon>JigsawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs" />
+    <Compile Include="ThingForms\DrawerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingForms\DrawerForm.Designer.cs">
+      <DependentUpon>DrawerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BedroomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BedroomControl.Designer.cs">
+      <DependentUpon>BedroomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Controls\KitchenControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\KitchenControl.Designer.cs">
+      <DependentUpon>KitchenControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LivingroomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LivingroomControl.Designer.cs">
+      <DependentUpon>LivingroomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThingForms\PictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingForms\PictureForm.Designer.cs">
+      <DependentUpon>PictureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThingForms\SafeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingForms\SafeForm.Designer.cs">
+      <DependentUpon>SafeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThingForms\SofaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingForms\SofaForm.Designer.cs">
+      <DependentUpon>SofaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThingForms\TimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingForms\TimerForm.Designer.cs">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\BedroomControl.resx">
+      <DependentUpon>BedroomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\KitchenControl.resx">
+      <DependentUpon>KitchenControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LivingroomControl.resx">
+      <DependentUpon>LivingroomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileForm.resx">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JigsawForm.resx">
+      <DependentUpon>JigsawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx" />
+    <EmbeddedResource Include="ThingForms\DrawerForm.resx">
+      <DependentUpon>DrawerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingForms\PictureForm.resx">
+      <DependentUpon>PictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingForms\SafeForm.resx">
+      <DependentUpon>SafeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingForms\SofaForm.resx">
+      <DependentUpon>SofaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingForms\TimerForm.resx">
+      <DependentUpon>TimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pictures\091048.jpg" />
+    <Content Include="pictures\622762d0f703918f9b8df8cd523d269759eec45d.jpg" />
+    <Content Include="pictures\90&amp;gp=0_meitu_2.jpg" />
+    <Content Include="pictures\9825bc315c6034a8c1a47786c813495409237677 %281%29.jpg" />
+    <Content Include="pictures\9825bc315c6034a8c1a47786c813495409237677.jpg" />
+    <Content Include="pictures\bedroom.jpg" />
+    <Content Include="pictures\bf096b63f6246b6057286d73e8f81a4c510fa297.jpg" />
+    <Content Include="pictures\closebox.jpg" />
+    <Content Include="pictures\closepicture.jpg" />
+    <Content Include="pictures\keytodoor.jpg" />
+    <Content Include="pictures\keytoketchen.jpg" />
+    <Content Include="pictures\kitchen.bmp" />
+    <Content Include="pictures\kitchen.jpg" />
+    <Content Include="pictures\knife.jpg" />
+    <Content Include="pictures\livingroom.jpg" />
+    <Content Include="pictures\openbox.jpg" />
+    <Content Include="pictures\openpicture.jpg" />
+    <Content Include="pictures\u=1192191185,2354855012&amp;fm=11&amp;gp=0.jpg" />
+    <Content Include="pictures\u=1766421999,1186494240&amp;fm=11&amp;gp=0.jpg" />
+    <Content Include="pictures\u=1942455465,2481667217&amp;fm=21&amp;gp=0.jpg" />
+    <Content Include="pictures\u=2056598004,2476469655&amp;fm=90&amp;gp=0.jpg" />
+    <Content Include="pictures\u=2212544264,449861816&amp;fm=23&amp;gp=0.jpg" />
+    <Content Include="pictures\u=305812598,2471121583&amp;fm=21&amp;gp=0.jpg" />
+    <Content Include="pictures\u=3058125_meitu_1.jpg" />
+    <Content Include="pictures\u=4089864800,2565236598&amp;fm=90&amp;gp=0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
