@@ -186,7 +186,7 @@ namespace GAME
 
         private void tsmiAbout_Click(object sender, EventArgs e)
         {//关于
-            MessageBox.Show("密室逃脱\n制作：徐嘉 于高晴");
+            MessageBox.Show("密室逃脱\n制作：XJ YGQ");
         }
 
         private void allTimer_Tick(object sender, EventArgs e)
